@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #222;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #8fa29a;
+  padding: 40px 20px;
+  color: white;
+}
+
+.title {
+  font-size: 70px;
+  margin: 0;
+}
+
+.post-header {
+  background-color: #eae4e4;
+  padding: 10px 0;
+}
+
+.post-header .new-game {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.post-header .new-game:hover {
+  color: #8fa29a;
+}
+
+.board {
+  background-color: #222;
+}
+
+.board .cards {
+  display: flex;
+  justify-content: center;    
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.board .cards .card {
+  height: 200px;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.board .cards .card.incorrect {
+  background-color: #222 !important;
+}
+
+.board .cards .card.unselectable {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+      padding: 40px 20px;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+   /* .board .cards {
+      padding: 20px 5px;
+    }
+
+    .board .cards .card {
+      height: 150px;
+      width: calc(50% - 20px);
+      margin: 5px;
+    }*/
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+      padding: 40px 20px;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .board .cards {
+      padding: 20px 5px;
+    }
+
+    .board .cards .card {
+      height: 150px;
+      width: calc(50% - 20px);
+      margin: 5px;
+    }
+}
