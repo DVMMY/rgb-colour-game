@@ -1,3 +1,4 @@
+# RGB Colour Game
 RGB Colour Game created using ReactJS.
 
 Live Preview: https://dvmmy.github.io/rgb-colour-game/
